@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+<style>
+/* formatação de fonte */
+h1 {
+  color:black;
+}
+h1 {
+text-align: center;
+margin-top: 40px;
+}
+
+nav#link{
+  text-align: center;
+}
+.xps{
+  margin-right: 50px;
+  margin-left: 50px;
+}
+nav#input1 {
+
+
+  text-align: center;
+  margin-top: 180px;
+  color: black;
+}
+nav#input2 {
+
+  text-align: center;
+  color: black;
+}
+nav#submit{
+  text-align: center;
+}
+
+
+nav#link {
+position: center;
+text-transform: uppercase;
+display: block;
+padding: 5px;
+transition: background-color 1s;
+}
+.xps:hover {
+
+background-color:pink;
+}
+
+
+
+</style>

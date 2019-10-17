@@ -1,0 +1,390 @@
+  <html lang="pt-br">
+
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PGRS</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+
+    <body background-color="white">
+
+
+        <div class="jumbotron text-center" style="background-image: url(imagens/inventario.png);">
+            <h1 style="color: white"> &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Gerenciamento de residuos Solido</h1>
+            <p style="color: white"> &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  Plano de Residuos</p>
+        </div>
+
+        <div class="container">
+  <h2>Cadastro do Plano de Resíduos</h2>
+  <br>
+  <!-- Nav pills -->
+  <ul class="nav nav-pills" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="pill" href="#home">Resíduos</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="pill" href="#menu1">Plano de Movimentação</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="pill" href="#menu2">Empresa Transportadora</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="pill" href="#menu3">Imagens</a>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div id="home" class="container tab-pane active"><br>
+      <h3>Cadastro de Resíduos</h3>
+      
+        <form action="/action_page.php">
+         
+          <div class="row col-md-9">
+            <div class="row col-md-7">
+              <label for="TxtCResiduo">Resíduo:</label>
+              <input type="number" class="form-control" id="TxtCResiduo">
+            </div>
+                <div class="row col-md-5" style="left: 8%">
+                  <label for="TxtCAcondi">Acondicionamento:</label>
+                  <select class="form-control" id="TxtCAcondi">
+                   <option value="TxtCAcondi" disabled selected >Tambor 200L Cod: E01</option>
+                   <option>...</option>
+                   </select>
+                
+
+
+                </div>
+          </div>
+              <div class="row col-md-9">
+                <div class="row col-md-7">
+                  <label for="TxtCFGeradora">Fonte Geradora:</label>
+                  <input type="text" class="form-control" id="TxtCFGeradora">
+                </div> 
+                  <div class="row col-md-5" style="left: 8%">
+                      <label for="TxtCArmaze">Armazenamento:</label>
+                      <input type="text" class="form-control" id="TxtCArmaze">
+                  </div>
+              </div>
+
+              <div class="row col-md-9">
+                <div class="row col-md-7">
+                  <label for="TxtCNorma">Norma:</label>
+                    <select class="form-control" id="TxtCNorma">
+                    <option value="TxtCNorma" disabled selected >NBR X..</option>
+                    <option>...</option>
+                    </select>
+                </div> 
+                  <div class="row col-md-5" style="left: 8%">
+                      <label for="TxtCClasse">Classe:</label>
+                      <select class="form-control" id="TxtCClasse">
+                      <option value="TxtCClasse" disabled selected >Escolha</option>
+                      <option>...</option>
+                      </select>
+                  </div>
+              </div>
+
+
+                    <div class="row col-md-9">
+                          <div class="row col-md-2">
+                            <label for="TxtCQtdNumber1">Quantidade:</label>
+                            <input type="number" class="form-control" id="TxtCQtdNumber1">
+                          </div> 
+                              <div class="row col-md-2" style="left:4%">
+                                <label for="TxtCQtdKG1">&nbsp</label>
+                                <select class="form-control" id="TxtCQtdKG1">
+                                 <option value="TxtCQtdKG" disabled selected >Kg</option>
+                                 <option>...</option>
+                                 </select>
+                            </div>
+                                <div class="row col-md-3" style="left:8%">
+                                    <label for="TxtCQtdDia1">&nbsp</label>
+                                    <select class="form-control" id="TxtCQtdDia1">
+                                     <option value="TxtCQtdDia1" disabled selected >Por Dia</option>
+                                     <option>...</option>
+                                     </select>
+                                </div>
+                                    <div class="row col-md-5" style="left:16%">
+                                        <label for="TxtCDestino">Destinação:</label>
+                                        <select class="form-control" id="TxtCDestino">
+                                         <option value="TxtCDestino" disabled selected >Incineração</option>
+                                         <option>...</option>
+                                         </select>
+                                    </div>
+
+                    </div>
+                          <div class="row col-md-9">
+                              <div class="row col-md-4">
+                                <label for="TxtCQtdNumber2">Freqüência de geração do resíduo:</label>
+                                <input type="number" class="form-control" id="TxtCQtdNumber2">
+                              </div> 
+                                    <div class="row col-md-2" style="left:3%">
+                                      <label for="TxtCQtdDia2">&nbsp</label>
+                                      <select class="form-control" id="TxtCQtdDia2">
+                                       <option value="TxtCQtdDia2" disabled selected >Por Dia</option>
+                                       <option>...</option>
+                                       </select>
+                                    </div>
+                                          <div class="row col-md-5" style="left:20%">
+                                              <label for="TxtCTratamento">Tratamento:</label>
+                                              <textarea id="TxtCTratamento"rows="1" cols="96" maxlength="1000" placeholder= "Como é removido os residuos"class="form-control" ></textarea>
+                                          </div>
+                          </div>
+
+
+
+        </form>
+    
+
+
+
+
+
+    </div>
+
+
+    <div id="menu1" class="container tab-pane fade"><br>
+      <h3>Movimentação do Resíduo</h3>
+
+          <form action="/action_page.php">
+         
+          <div class="row col-md-8">
+            <div class="row col-md-6">
+              <label for="TxtMResiduo">Resíduo:</label>
+              <input type="number" class="form-control" id="TxtMResiduo">
+            </div>
+                <div class="row col-md-6" style="left: 8%">
+                  <label for="TxtMClasse">Classe:</label>
+                  <select class="form-control" id="TxtMClasse">
+                     <option value="TxtMClasse" disabled selected >NBR...</option>
+                     <option>...</option>
+                     </select>
+                </div>
+          </div>
+          <br/><br/>
+              <div class="row col-md-12">
+              <h4 class="row col-md-4" id="TxtMEstoTemp">Estocagem Temporária:</h4> 
+              <h4 class="row col-md-6" id="TxtMDesFinal" style="left: 4%">Destinação Final:</h4>
+              </div>
+                <div class="row col-md-9">
+                    <div class="row col-md-3">
+                      <label for="TxtMFrequencia1">Freqüência:</label>
+                      <select class="form-control" id="TxtMFrequencia1">
+                     <option value="TxtMFrequencia1" disabled selected >1 Vez</option>
+                     <option>...</option>
+                     </select>
+                    </div>
+                        <div class="row col-md-2" style="left: 1%">
+                          <label for="TxtMFrequencia11">&nbsp</label>
+                            <select class="form-control" id="TxtMFrequencia11">
+                                 <option value="TxtMFrequencia11" disabled selected >P/Dia</option>
+                                 <option>...</option>
+                            </select>
+                        </div>
+                            <div class="row col-md-3" style="left: 13%">
+                                <label for="TxtMFrequencia2">Freqüência:</label>
+                                <select class="form-control" id="TxtMFrequencia2">
+                                 <option value="TxtMFrequencia2" disabled selected >1 Vez</option>
+                                 <option>...</option>
+                                 </select>
+                            </div>
+                              <div class="row col-md-2" style="left: 14%">
+                                <label for="TxtMFrequencia22">&nbsp</label>
+                                <select class="form-control" id="TxtMFrequencia22">
+                                 <option value="TxtMFrequencia22" disabled selected >P/Dia</option>
+                                 <option>...</option>
+                                </select>
+                              </div>
+                
+                </div>
+
+                    <div class="row col-md-8">
+                        <div class="row col-md-2">
+                          <label for="TxtMQTD1">Quantidade:</label>
+                          <input type="number" class="form-control" id="TxtMQTD1">
+                        </div>
+                          <div class="row col-md-2" style="left:1%">
+                                <label for="TxtMQtdKG1">&nbsp</label>
+                                <select class="form-control" id="TxtMQtdKG1">
+                                 <option value="TxtMQtdKG1" disabled selected >Kg</option>
+                                 <option>...</option>
+                                 </select>
+                            </div>
+                                <div class="row col-md-3" style="left:1%">
+                                    <label for="TxtMQtdDia1">&nbsp</label>
+                                    <select class="form-control" id="TxtMQtdDia1">
+                                     <option value="TxtMQtdDia1" disabled selected >Por Dia</option>
+                                     <option>...</option>
+                                     </select>
+                                </div>
+
+
+                            <div class="row col-md-2" style="left: 8%">
+                          <label for="TxtMQTD2">Quantidade:</label>
+                          <input type="number" class="form-control" id="TxtMQTD2">
+                        </div>
+                          <div class="row col-md-2" style="left:9%">
+                                <label for="TxtMQtdKG2">&nbsp</label>
+                                <select class="form-control" id="TxtMQtdKG2">
+                                 <option value="TxtMQtdKG2" disabled selected >Kg</option>
+                                 <option>...</option>
+                                 </select>
+                            </div>
+                                <div class="row col-md-3" style="left:9%">
+                                    <label for="TxtMQtdDia2">&nbsp</label>
+                                    <select class="form-control" id="TxtMQtdDia2">
+                                     <option value="TxtMQtdDia2" disabled selected >Por Dia</option>
+                                     <option>...</option>
+                                     </select>
+                                </div>
+                    </div>
+
+                            <div class="row col-md-8">
+                                <div class="row col-md-6">
+                                  <label for="TxtMLocal">Local:</label>
+                                  <select class="form-control" id="TxtMLocal">
+                                     <option value="TxtMLocal" disabled selected >Tambor 200L COD E01</option>
+                                     <option>...</option>
+                                  </select>
+                                </div>
+                                    <div class="row col-md-6" style="left: 8%">
+                                      <label for="TxtMDestFinal">Destino Final:</label>
+                                      <select class="form-control" id="TxtMDestFinal">
+                                       <option value="TxtMDestFinal" disabled selected >Incineração</option>
+                                       <option>...</option>
+                                      </select>
+                                    </div>
+                          </div>
+
+
+
+
+
+
+          </form>
+
+
+
+
+
+    </div>
+
+
+    <div id="menu2" class="container tab-pane fade"><br>
+      <h3>Empresa de Transporte</h3>
+
+        <form action="/action_page.php">
+            <div class="row col-md-8">
+                <label for="TxtPCNPJ">CNPJ:</label>
+                <input type="number" class="form-control" id="TxtPCNPJ">
+            </div>
+                <div class="row col-md-8">
+                    <label for="TxtPRazaoS">Razão Social:</label>
+                    <input type="text" class="form-control" id="TxtPRazaos" >
+                </div>
+
+                  <div class="row col-md-8">
+                      <div class="row col-md-6">
+                        <label for="TxtPLincençaA">Licença Ambiental:</label>
+                        <input type="text" class="form-control" id="TxtPLincençaA">
+                      </div>
+                        <div class="row col-md-6" style="left: 9%">
+                          <label for="TxtPEndereco">Endereço:</label>
+                          <input type="text" class="form-control" id="TxtPEndereco">
+                        </div>
+
+                  </div>
+                    <div class="row col-md-8">
+                        <div class="row col-md-6">
+                          <label for="TxtPCep">CEP:</label>
+                          <input type="number" class="form-control" id="TxtPCep" >
+                        </div>
+                            <div class="row col-md-6" style="left: 9%;">
+                              <label for="TxtPBairro">Bairro:</label>
+                              <input type="text" class="form-control" id="TxtPBairro" >
+                            </div>
+                    </div>
+                        <div class="row col-md-8">
+                            <div class="row col-md-6">
+                              <label for="TxtPCidade">Cidade:</label>
+                              <input type="text" class="form-control" id="TxtPCidade" >
+                            </div>
+                              <div class="row col-md-3" style="left: 9%;">
+                                <label for="TxtPUF">UF:</label>
+                                  <select class="form-control" id="TxtPUF">
+                                   <option value="TxtPUF" disabled selected >Escolha</option>
+                                   <option>...</option>
+                                  </select>
+                              </div>
+                                <div class="row col-md-3" style="left: 13.4%;">
+                                  <label for="TxtPMoop">Possui Moop:</label>
+                                    <select class="form-control" id="TxtPMoop">
+                                     <option value="TxtPMoop" disabled selected >Escolha</option>
+                                     <option>Sim</option>
+                                     <option>Não</option>
+                                    </select>
+                                </div>
+
+                        </div>
+
+                          <div class="row col-md-8" >
+                            <div class="row col-md-4" style="left: 0%;">
+                              <label for="TxtPNomeCondutor">Nome e sobrenome do Condutor:</label>
+                              <input type="number" class="form-control" id="TxtPNomeCondutor" >
+                            </div>
+                              <div class="row col-md-4" style="left: 3%;">
+                                <label for="TxtPTel">Tel:</label>
+                                <input type="number"  class="form-control" id="TxtPTel" >
+                              </div>
+                                <div class="row col-md-5" style="left: 5%;">
+                                <label for="TxtPEmail">Email:</label>
+                                <input type="number"  class="form-control" id="TxtPEmail" >
+                              </div>
+
+                          </div>
+                          
+
+      </form>
+
+
+
+
+
+    </div>
+
+
+    <div id="menu3" class="container tab-pane fade"><br>
+      <h3>Anexar imagens do Empreendimento</h3>
+      
+        <input type="file" name="">
+
+
+
+
+    </div>
+
+    <br/>
+                      <div class="row col-md-6" style="left: 29%;">
+                        <button id="BtnSalvar" type="button" class="btn btn-success">Salvar</button>
+                      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <body>
+<html>                                                                                                                                                                                                                                                                                                                                                                                

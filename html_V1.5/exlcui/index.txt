@@ -1,0 +1,18 @@
+head
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="funcoes.js"></script>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+head
+
+
+color: #606060 background pos click
+color: background-color:#dddddd; background exibição
+
+/--------------/
+imgs
+    <h2>obrigado por usar o nosso serviço</h2>
+<img src="imagens/fofof.png"/>
+
+#site criado por <a href="https://www.facebook.com/andresantos.cr7" target="_blank"/>André Santos</a>

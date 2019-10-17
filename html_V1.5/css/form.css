@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+
+form {
+    margin: 100px;
+    text-align: center
+}
+
+.row {
+    margin-bottom: 25px
+}

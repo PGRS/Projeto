@@ -1,0 +1,236 @@
+<html lang="pt-br">
+
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PGRS Cadastro</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+    <body background-color="white">
+
+
+<div class="jumbotron text-center" style="background-image: url(imagens/empreendimento.png); ">
+  <h1 style="color:white"> &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Gerenciamento de Resíduos Sólidos</h1>
+  <p style="color: white"> &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  Cadastro de empreendimento</p>
+</div>
+<div class="container">
+  <h2>Empresa Geradora de Resíduos Sólidos</h2>
+  <br>
+  <!-- Nav pills -->
+  <ul class="nav nav-pills" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="pill" href="#home">Dados da Empresa</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="pill" href="#menu1">Outros dados</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="pill" href="#menu2">Responsável Técnico</a>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div id="home" class="container tab-pane active"><br>
+      <h3>Dados da Empresa</h3>
+        
+        <form action="/action_page.php">
+          <div class="row col-md-8">
+              <label for="TxtCNPJ">CNPJ:</label>
+              <input type="number" class="form-control" id="TxtCNPJ">
+          </div>
+              <div class="row col-md-8">
+                 <label for="TxtRSocial">Razão Social:</label>
+                  <input type="text" class="form-control" id="TxtRSocial" >
+              </div>
+
+                <div class="row col-md-8">
+                    <label for="TxtEndereco">Endereço:</label>
+                    <input type="text" class="form-control" id="TxtEndereco">
+                </div>
+                  <div class="row col-md-8">
+                      <div class="row col-md-6">
+                        <label for="TxtCep">CEP:</label>
+                        <input type="number" class="form-control" id="TxtCep" >
+                      </div>
+                      <div class="row col-md-6" style="left: 9%;">
+                        <label for="TxtBairro">Bairro:</label>
+                        <input type="text" class="form-control" id="TxtBairro" >
+                      </div>
+                  </div>
+                      <div class="row col-md-8">
+                          <div class="row col-md-6">
+                            <label for="TxtCidade">Cidade:</label>
+                            <input type="text" class="form-control" id="TxtCidade" >
+                          </div>
+                          <div class="row col-md-6" style="left: 9%;">
+                            <label for="TxtUF">UF:</label>
+                            <select class="form-control" id="TxtUF">
+                           <option value="TxtUF" disabled selected >Estado</option>
+                           <option>...</option>
+                           </select>
+                          </div>
+
+                      </div>
+
+                        <div class="row col-md-8" >
+                          <div class="row col-md-6" style="left: 0%;">
+                            <label for="TxtFProprios">Funcionários Próprios:</label>
+                            <input type="number" class="form-control" id="TxtFProprios" >
+                          </div>
+                          <div class="row col-md-6" style="left: 9%;">
+                            <label for="TxtFTerceiros">Funcionários Tercerizados:</label>
+                            <input type="number"  class="form-control" id="TxtFTerceiros" >
+                          </div>
+                        </div>
+                        
+
+        </form>
+
+                        
+          
+
+
+
+
+    </div>
+
+    <div id="menu1" class="container tab-pane fade"><br>
+      <h3>Outros Dados</h3>
+      
+        <form action="/action_page.php">
+
+            <div class="row col-md-8">
+              <label for="TxtEmail">Email:</label>
+              <input type="email" class="form-control" id="TxtEmail">
+            </div>
+          
+
+        <div class="row col-md-8">
+          
+          <div class="row col-md-6">
+              <label for="TxtTel">Telefone:</label>
+              <input type="number" class="form-control" id="TxtTel">
+          </div>
+
+            <div class="row col-md-6" style="left: 9%;">
+              <label for="TxtFax">Fax:</label>
+              <input type="number" class="form-control" id="TxtFax">
+            </div>
+
+        </div>
+
+        <br/>
+        <div class="row col-md-8 ">
+        <textarea id="txtDesc"rows="5" cols="96" maxlength="100" placeholder= "Descrição da empresa"class="form-control" ></textarea>
+        </div> 
+
+        <div class="row col-md-10">
+          
+          <div class="row col-md-3">
+              <label for="TxtAtotal">Área Total:</label>
+              <input type="number" class="form-control" id="TxtAtotal">
+          </div>
+
+            <div class="row col-md-3"  style="left: 8%;">
+              <label for="TxtAreaC">Área Construída:</label>
+              <input type="number" class="form-control" id="TxtAreaC">
+            </div>
+            <div class="row col-md-3" style="left: 15%;">
+              <label for="TxrAreaE">Área de Expansão:</label>
+              <input type="number" class="form-control" id="TxrAreaE">
+            </div>
+
+        </div>       
+          
+
+        </form>
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <div id="menu2" class="container tab-pane fade"><br>
+      
+            
+          <form action="/action_page.php">
+                <h3>Responsável Técnico pela Elaboração</h3>
+                  
+                  <div class="row col-md-8">
+                      <label for="TxtNomeEla">Nome e sobrenome:</label>
+                      <input type="text" class="form-control" id="TxtNomeEla">
+                  </div>
+
+                    <div class="row col-md-8">
+                      <label for="TxtEmailEla">Email:</label>
+                      <input type="email" class="form-control" id="TxtEmailEla">
+                    </div>
+
+                        <div class="row col-md-8">
+                          <label for="TxtTelEla">Telefone:</label>
+                          <input type="number" class="form-control" id="TxtTelEla">
+                        </div>
+
+                <h3>Responsável Técnico pela Execução</h3>
+
+                    <div class="row col-md-8">
+                      <label for="TxtNomeExecu">Nome:</label>
+                      <input type="text" class="form-control" id="TxtNomeExecu">
+                    </div>
+
+                        <div class="row col-md-8">
+                          <label for="TxtEmailExecu">Email:</label>
+                          <input type="email" class="form-control" id="TxtEmailExecu">
+                        </div>
+
+                            <div class="row col-md-8">
+                              <label for="TxtTelExecu">Telefone:</label>
+                              <input type="number" class="form-control" id="TxtTelExecu">
+                            </div>
+
+
+
+
+
+
+          </form>
+
+
+
+    </div>
+  </div>
+</div>
+
+                    <br/>
+                      <div class="row col-md-6" style="left: 29%;">
+                        <button id="BtnSalvar" type="button" class="btn btn-success">Salvar</button>
+                      </div>
+
+
+
+
+
+
+
+         
+
+    <body>
+
+
+
+<html>                                                                                                                                                                                                                                                                                                                                                                                

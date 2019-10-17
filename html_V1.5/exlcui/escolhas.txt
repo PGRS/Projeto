@@ -1,0 +1,11 @@
+<form id="frmCadastro">
+
+              <nav id="link">
+              <a class="xps" href="index.html" target="_blank" >Novo Investimento</a>
+              <a class="xps" href="Ativos.html" target="_blank" >Investimentos ativos</a>
+              </nav>
+
+
+
+
+               </form>
